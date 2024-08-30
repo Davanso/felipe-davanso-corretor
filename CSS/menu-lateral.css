@@ -1,0 +1,82 @@
+/* Menu Lateral */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.side-menu ul li a:hover {
+    color: #f1ba0f;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Estilos para as redes sociais */
+.redes-sociais {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 360px;
+}
+
+.redes-sociais li {
+    margin: 0;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #333; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #f1ba0f; /* Cor dos ícones ao passar o mouse */
+}
+
+
+
+
+
+

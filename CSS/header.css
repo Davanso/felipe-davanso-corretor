@@ -1,0 +1,40 @@
+/* Estrutura */
+#menu-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+#menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo-principal {
+    width: 100px;
+}
+
+.header-text {
+    font-family: 'Playwrite CU', sans-serif;
+    font-size: 25px;
+}
+
+.menu-navegacao {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display: block; /* Mostra o ícone em telas pequenas */
+    }
+
+    .menu-navegacao {
+        display: none; /* Esconde o menu de navegação */
+    }
+}
