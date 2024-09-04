@@ -32,9 +32,6 @@
     text-decoration: none;
 }
 
-.side-menu ul li a:hover {
-    color: #f1ba0f;
-}
 
 .close-btn {
     position: absolute;
@@ -74,9 +71,17 @@
     transition: color 0.3s;
 }
 
-.redes-sociais a:hover {
-    color: #f1ba0f; /* Cor dos ícones ao passar o mouse */
+.redes-sociais-facebook a:hover {
+ color: blue;   
 }
+
+.redes-sociais-instagram a:hover {
+    color: rgb(255, 144, 222);   
+   }
+
+.redes-sociais-youtube a:hover {
+ color: red;   
+}   
 
 
 

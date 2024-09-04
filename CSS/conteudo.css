@@ -39,7 +39,7 @@
 
 #conteudo-secundario {
     text-align: center; /* Centraliza o texto horizontalmente */
-    margin-top: 150px; /* Adiciona espaço superior, se necessário */
+    margin-top: 110px; /* Adiciona espaço superior, se necessário */
     padding: 10px; 
 }
 
@@ -50,17 +50,27 @@
     text-decoration: underline;
 }
 
+#conteudo-secundario a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#conteudo-secundario a:hover {
+    color: #ffffff;
+}
 .video-carousel {
     overflow: hidden; /* Oculta a parte do carrossel que está fora da área visível */
     position: relative;
     margin-top: 20px;
+    background-color: black;
 }
 
 .video-grid {
     display: flex;
     transition: transform 0.5s ease; /* Suaviza o efeito de transição */
-    gap: 20px; /* Espaço entre os vídeos */
-    width: calc(300px * 8); /* Ajuste a largura para o número total de vídeos visíveis */
+    gap: 15px; /* Espaço entre os vídeos */
+    width: calc(300px * 6); /* Ajuste a largura para o número total de vídeos visíveis */
 }
 
 .video-container {

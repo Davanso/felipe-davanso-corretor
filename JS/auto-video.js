@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoGrid = document.querySelector('.video-grid');
     const videos = Array.from(videoGrid.getElementsByClassName('video-container'));
     let currentIndex = 0;
-    const carouselInterval = 3000;
-    const startDelay = 5000;
+    const carouselInterval = 8000;
+    const startDelay = 10000;
 
     function showCurrentVideo() {
         const videoWidth = videos[0].offsetWidth + 20; // Inclui o espaço entre os vídeos
