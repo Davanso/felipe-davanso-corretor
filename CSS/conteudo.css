@@ -1,0 +1,51 @@
+#conteudo {
+    margin-top: 40px; /* Espaço entre o header e o conteúdo principal */
+}
+
+#conteudo-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+#conteudo-principal img {
+    width: 250px; /* Define o tamanho da imagem */
+    height: 250px;
+    border-radius: 80%; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contorno redondo */
+}
+
+.texto-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente o texto */
+}
+
+.texto-principal h3 {
+    margin: 0;
+    font-size: 1.7em;
+}
+
+.texto-principal p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+/* Secundario */
+
+#conteudo-secundario {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 150px; /* Adiciona espaço superior, se necessário */
+    padding: 10px; 
+}
+
+#conteudo-secundario h4 {
+    font-size: 1.2em;
+    font-weight: 500; 
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
