@@ -1,0 +1,47 @@
+#rodape {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px; /* Espaço interno */
+    text-align: center; /* Centraliza o texto */
+    border-top: 1px solid #ddd; /* Linha de separação superior */
+    margin-top: 100px;
+}
+
+#rodape p {
+    margin: 0; /* Remove margens padrão */
+    font-size: 0.9em; /* Tamanho do texto */
+    color: #333; /* Cor do texto */
+}
+
+.redes-sociais-rodape {
+    list-style: none; /* Remove marcadores padrão da lista */
+    padding: 0; /* Remove padding padrão */
+    margin: 15px 0 0; /* Espaço acima da lista */
+    display: flex; /* Alinha os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens */
+}
+
+.redes-sociais-item {
+    margin: 0 10px; /* Espaço entre os ícones */
+}
+
+.social-link {
+    color: #333; /* Cor dos ícones */
+    font-size: 1.5em; /* Tamanho dos ícones */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.social-link:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands"; /* Fonte para ícones */
+}
+
+
+/* Barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 0px; /* Esconde a barra de rolagem */
+    background: transparent; /* Fundo transparente */
+}
