@@ -1,0 +1,149 @@
+/* Estrutura */
+#menu-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+#menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo-principal {
+    width: 100px;
+}
+
+.header-text {
+    font-family: 'Playwrite CU', sans-serif;
+    font-size: 25px;
+}
+
+.menu-navegacao {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display: block; /* Mostra o ícone em telas pequenas */
+    }
+
+    .menu-navegacao {
+        display: none; /* Esconde o menu de navegação */
+    }
+}
+
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a2acb8;
+}
+
+#site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#conteudo-principal {
+    padding: 40px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #555;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do rodapé */
+#rodape {
+    background-color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#rodape p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.redes-sociais-rodape {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociais-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-link {
+    font-size: 24px;
+    color: #555;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #f1ba0f;
+}

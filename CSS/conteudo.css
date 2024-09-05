@@ -11,8 +11,8 @@
 }
 
 #conteudo-principal img {
-    width: 250px; /* Define o tamanho da imagem */
-    height: 250px;
+    width: 300px; /* Define o tamanho da imagem */
+    height: 300px;
     border-radius: 80%; /* Torna a imagem redonda */
     object-fit: cover; /* Garante que a imagem se ajuste ao contorno redondo */
 }
@@ -39,7 +39,7 @@
 
 #conteudo-secundario {
     text-align: center; /* Centraliza o texto horizontalmente */
-    margin-top: 110px; /* Adiciona espaço superior, se necessário */
+    margin-top: 150px; /* Adiciona espaço superior, se necessário */
     padding: 10px; 
 }
 
@@ -70,7 +70,7 @@
     display: flex;
     transition: transform 0.5s ease; /* Suaviza o efeito de transição */
     gap: 15px; /* Espaço entre os vídeos */
-    width: calc(300px * 6); /* Ajuste a largura para o número total de vídeos visíveis */
+    width: calc(100px * 6); /* Ajuste a largura para o número total de vídeos visíveis */
 }
 
 .video-container {

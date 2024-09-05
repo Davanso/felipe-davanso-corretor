@@ -32,6 +32,11 @@
     text-decoration: none;
 }
 
+.side-menu ul li a:hover {
+    color: #f1ba0f;
+    text-decoration: none;
+}
+
 
 .close-btn {
     position: absolute;
