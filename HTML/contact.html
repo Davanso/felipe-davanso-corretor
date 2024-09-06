@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="/CSS/menu-lateral.css">
         <link rel="stylesheet" href="/CSS/reset.css">
         <!-- Fonte -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <!-- Fonte do texto do Header -->
@@ -21,7 +23,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
     <body>
-        <div id="site">
+    <div id="site">
             <div id="cabecalho">
                 <div id="menu-principal">
                     <!-- Ícone do menu (visível em telas pequenas) -->
@@ -56,29 +58,26 @@
         </div> <!-- div: side-menu -->
 
         <div id="conteudo-principal">
-            <h2>Entre em Contato</h2>
-            <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
-
-            <form action="#" method="post" class="form-contato">
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                </div>
-
-                <button type="submit">Enviar</button>
-            </form>
+            <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <form action="submit_form.php" method="post" class="contact-form">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome..." required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Seu email..." required>
+                    
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" placeholder="Assunto..." required>
+                    
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Escreva sua mensagem..." rows="5" required></textarea>
+                    
+                    <button class="button-56" role="button" type="submit">Enviar</button>
+                </form>
+            </div> <!-- div: contact-form-container -->
         </div> <!-- div: conteudo-principal -->
-
+    </div> <!-- div: site -->
         <div id="rodape">
             <!-- Design do footer -->
             <p>
