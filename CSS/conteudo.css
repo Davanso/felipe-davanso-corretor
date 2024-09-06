@@ -3,43 +3,88 @@
 }
 
 #conteudo-principal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px; /* Espaço entre a imagem e o texto */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
 }
 
 #conteudo-principal img {
-    width: 300px; /* Define o tamanho da imagem */
-    height: 300px;
-    border-radius: 80%; /* Torna a imagem redonda */
-    object-fit: cover; /* Garante que a imagem se ajuste ao contorno redondo */
+  max-width: 300px;
+  max-height: 500px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 4px rgba(0, 0, 0, 0.1);
 }
 
 .texto-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centraliza verticalmente o texto */
+  flex: 1;
+  color: #fff;
 }
 
 .texto-principal h3 {
-    margin: 0;
-    font-size: 1.7em;
+  font-family: 'Playwright Cuba', sans-serif;
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s ease-out forwards;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding-left: 14px;
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .texto-principal p {
-    margin-top: 10px;
-    font-size: 1.2em;
-    line-height: 1.6;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
 }
+
+.texto-principal p:before {
+  content: "✨ ";
+  font-size: 1.5em;
+  color: #f39c12;
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Estilos para Responsividade */
+@media (max-width: 768px) {
+  #conteudo-principal {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  #conteudo-principal img {
+      margin-bottom: 20px;
+  }
+}
+
 
 
 /* Secundario */
 
 #conteudo-secundario {
-    text-align: center; /* Centraliza o texto horizontalmente */
-    margin-top: 150px; /* Adiciona espaço superior, se necessário */
+    text-align: center; 
+    margin-top: 150px; 
     padding: 10px; 
 }
 
@@ -56,7 +101,8 @@
 .botao-trabalho {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 10px 0;
+    padding-bottom: 20px;
 }
 
 .video-carousel {
